@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="semestral project">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Jakub Kraus</h1>
+    </header>
+
+    <nav>
+      <button id="menu_button" aria-label="Menu">Menu</button>
+
+      <div class="nav-center">
+        <ul id="menu_list">
+          <li><a href="#section1">O mně</a></li>
+          <li><a href="#section2">Zkušenosti</a></li>
+          <li><a href="#section3">Projekty</a></li>
+          <li><a href="#section4">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <button id="dark-mode-button" aria-label="Dark Mode Button">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21 12.79A9 9 0 0112.21 3 7 7 0 1012 21a9 9 0 009-8.21z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </nav>
+
+    <main>
+      <section id="section1" class="text-left">
+        <div class="content-wrapper">
+          <div class="text-block">
+            <h2>O mně</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+              quasi iusto qui quae a eligendi consequuntur pariatur praesentium
+              sequi quisquam accusamus provident quis sit, sapiente tenetur ex
+              at. Nihil alias accusantium aliquid nobis eveniet, minima expedita
+              sapiente hic quos impedit. Enim odit non provident nobis unde
+              doloribus?
+            </p>
+
+            <div class="list">
+              <h3>Ab, distinctio?</h3>
+              <ol>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>
+                  Lorem ipsum dolor sit.
+                  <ol>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Laboriosam accusamus necessitatibus at.</li>
+                    <li>Maiores provident illo nostrum?</li>
+                  </ol>
+                </li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Ea officiis possimus voluptate?</li>
+                <li>Deserunt earum quis natus?</li>
+              </ol>
+            </div>
+          </div>
+          <img src="images/about_me.jpg" alt="img1">
+        </div>
+      </section>
+
+      <section id="section2" class="text-right">
+        <div class="content-wrapper">
+          <div class="text-block">
+            <h2>Zkušenosti</h2>
+
+            <ul class="list">
+              <li>
+                Vývoj herních projektů
+                <ul>
+                  <li>Godot Engine (pokročilá úroveň)</li>
+                  <li>Game Maker Studio (pokročilá úroveň)</li>
+                  <li>Unity (základy, prototypování)</li>
+                </ul>
+              </li>
+              <li>
+                Programování
+                <ul>
+                  <li>Java (OOP, návrhové vzory)</li>
+                  <li>JavaScript (webové aplikace, herní logika)</li>
+                  <li>GDScript (Godot Engine)</li>
+                  <li>C# (Unity, základy)</li>
+                </ul>
+              </li>
+              <li>
+                Grafika a 3D modelování
+                <ul>
+                  <li>Blender (modelování, animace)</li>
+                  <li>Krita a Photoshop (2D grafika, UI)</li>
+                </ul>
+              </li>
+              <li>Level design a game design</li>
+              <li>Optimalizace výkonu a debugging</li>
+              <li>Publikace projektů na Itch.io, Google Play</li>
+              <li>Týmová spolupráce (Erasmus+, game jamy)</li>
+            </ul>
+          </div>
+          <img src="images/experiences.jpg" alt="img2">
+        </div>
+      </section>
+
+      <section id="section3" class="text-left">
+        <div class="content-wrapper">
+          <div class="text-block" id="table-container">
+            <h2>Projekty</h2>
+            <table>
+              <caption>
+                Moje Projekty
+              </caption>
+              <thead>
+                <tr>
+                  <th rowspan="2">Název</th>
+                  <th rowspan="2">Žánr</th>
+                  <th colspan="2">Info</th>
+                  <th rowspan="2">Rok</th>
+                </tr>
+                <tr>
+                  <th>Engine</th>
+                  <th>Odkaz</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="arkada">
+                  <td>Quick Click</td>
+                  <td>Arkáda</td>
+                  <td>Unity</td>
+                  <td><a href="https://www.google.com/">Otevřít</a></td>
+                  <td>2023</td>
+                </tr>
+                <tr class="mix">
+                  <td rowspan="3">Purpura</td>
+                  <td rowspan="3">RPG</td>
+                  <td>Godot</td>
+                  <td><a href="https://www.google.com/">Otevřít</a></td>
+                  <td>2022</td>
+                </tr>
+                <tr class="mix">
+                  <td colspan="2">Demo verze ve vývoji</td>
+                  <td>2023</td>
+                </tr>
+                <tr class="mix">
+                  <td colspan="2">Spolupráce s grafikem</td>
+                  <td>2024</td>
+                </tr>
+                <tr class="rpg">
+                  <td>Apothechef</td>
+                  <td>Simulátor / RPG</td>
+                  <td>Godot</td>
+                  <td><a href="https://www.google.com/">Otevřít</a></td>
+                  <td>2023</td>
+                </tr>
+                <tr class="rpg">
+                  <td>Heart of the Dungeon</td>
+                  <td>Dungeon Crawler</td>
+                  <td>Godot</td>
+                  <td><a href="https://www.google.com/">Otevřít</a></td>
+                  <td>2025</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/LIHY1_ldrYg?si=55VnhEcQXNDiadvQ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="section4" class="text-right">
+        <div class="content-wrapper">
+          <div class="text-block">
+            <h2>Kontakt</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              vel sem at velit euismod tempor. Donec ut leo at sapien suscipit
+              luctus.
+            </p>
+            <form action="#" method="post">
+              <fieldset>
+                <legend>Kontaktní Formulář</legend>
+                <label for="jmeno">Jméno:</label>
+                <input
+                  type="text"
+                  id="jmeno"
+                  name="jmeno"
+                  placeholder="Zadejte své jméno"
+                  required
+                >
+
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Zadejte svůj email"
+                  required
+                >
+
+                <label for="zprava">Zpráva:</label>
+                <textarea
+                  id="zprava"
+                  name="zprava"
+                  rows="4"
+                  placeholder="Napište svou zprávu"
+                  required
+                ></textarea>
+
+                <button type="submit">Odeslat</button>
+              </fieldset>
+            </form>
+          </div>
+          <img src="images/contact.png" alt="img3">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2025</p>
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjakubkraus2.github.io%2F">HTML audit</a>
+      <a href="https://jigsaw.w3.org/css-validator/validator?lang=cs&profile=css3svg&uri=https%3A%2F%2Fjakubkraus2.github.io%2F&usermedium=all&vextwarning=&warning=1
+      ">CSS audit</a>
+      <a href="https://achecks.org/achecker#wcag2aa,https://jakubkraus2.github.io/">AChecker</a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
